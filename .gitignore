@@ -1,0 +1,11 @@
+*.class
+target
+Dumps
+.project
+.classpath
+.settings
+# Package Files #
+*.jar
+*.war
+*.ear
+build
