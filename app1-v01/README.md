@@ -2,6 +2,10 @@ Building:
 
 Checkout this project: https://github.com/spolti/wfly_book.git
 
-Then run the manve command:
+Access app directory:
 
-mvn install
+$ cd app1-v01
+
+Then run the maven command:
+
+$ mvn install
