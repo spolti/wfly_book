@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <jboss-web>
-    <context-root>/app1-v02</context-root>
+	<context-root>/</context-root>
+	<virtual-host>app1-v03</virtual-host>
 </jboss-web>

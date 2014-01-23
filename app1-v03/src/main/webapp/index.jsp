@@ -1,8 +1,9 @@
 <%@ page import="javax.management.MBeanServer,java.lang.management.ManagementFactory,javax.management.ObjectName" %>
 <html>
 <body>
-<h2>Hello there, here is our second web app running on the new WildFly Server <br>
-Using a context root configuration to change the Application URI, see below some configurations!</h2>
+<h2>Hello there, here is our third web app running on the new WildFly Server <br>
+Using a context root configuration to change the Application URI<br>
+And using the virtual host app1-v03.mydomain.com to access our application, see below some configurations!</h2>
 
 <%
 	MBeanServer mBeanServer = ManagementFactory.getPlatformMBeanServer();
@@ -17,7 +18,7 @@ Using a context root configuration to change the Application URI, see below some
 	out.println("<br><b>WildFly Server base directory: </b>" + wfly_server);
 	out.println("<br><b>WildFly Logs Directory: </b>" + wfly_log_dir);
 	out.println("<br><b>WildFly HTTP port: </b>" + wfly_http_port);
-	out.println("<br><b>WildFly Context Root: app1-v02</b>");
+	out.println("<br><b>WildFly Context Root: /</b>");
  %>
 
 </body>
