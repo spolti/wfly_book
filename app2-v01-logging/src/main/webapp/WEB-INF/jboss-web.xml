@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jboss-web>
+	<context-root>/log</context-root>
+	<!--  virtual-host>logging</virtual-host-->
+</jboss-web>
