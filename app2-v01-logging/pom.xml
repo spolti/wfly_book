@@ -4,7 +4,7 @@
 	<groupId>wfly-book-app2</groupId>
 	<artifactId>app2-v01-logging</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-vhost-SNAPSHOT</version>
+	<version>2.0.1-SNAPSHOT</version>
 	<name>app2-v01-logging Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
