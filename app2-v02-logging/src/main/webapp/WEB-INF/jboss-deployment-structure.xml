@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+	<deployment>
+		<exclusions>
+			<module name="org.apache.log4j" />
+		</exclusions>
+		<dependencies>
+			<module name="com.wfly-book-app2.app2-v02-module" />
+		</dependencies>
+	</deployment>
+</jboss-deployment-structure>  
