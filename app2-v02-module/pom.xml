@@ -5,7 +5,7 @@
 	<artifactId>app2-v02-module</artifactId>
 	<packaging>war</packaging>
 	<version>2.0.1-SNAPSHOT</version>
-	<name>app2-v01-logging Maven Webapp</name>
+	<name>app2-v01-module Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 
@@ -37,6 +37,6 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>app2-v01-logging-${project.version}</finalName>
+		<finalName>app2-v02-module-${project.version}</finalName>
 	</build>
 </project>
