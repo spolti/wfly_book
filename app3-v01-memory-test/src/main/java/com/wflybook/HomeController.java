@@ -25,12 +25,17 @@ public class HomeController {
 				"This app will simulate a OutOfMemory Error.");
 
 		List<Object> list = new ArrayList<Object>();
-
+		
 		while (true) {
 
-			Logger.getLogger(getClass()).info("This is a infinete loop, list size: " + list.size());
-			list.add(new Object());
-			list.add(new Object());
+			try{
+				Logger.getLogger(getClass()).info("This is a infinete loop, list size: " + list.size());
+				list.add(new Object());
+				list.add(new Object());	
+			}catch (Exception e){
+				Logger.getLogger(getClass()).error("Objects stored on heap before OutOfMemory: " + list.size());
+			}
+			
 
 		}
 	}
