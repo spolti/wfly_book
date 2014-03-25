@@ -17,7 +17,7 @@ public class HomeController {
 	}
 	
 	@Path("/home")
-	public void home(String level) {
+	public void home() {
 				
 		
 		Logger.getLogger(getClass()).fatal("This is a fatal message, a high level message error.");
@@ -26,9 +26,7 @@ public class HomeController {
 		Logger.getLogger(getClass()).info("This is a information message.");
 		Logger.getLogger(getClass()).debug("This is a debug message.");
 		Logger.getLogger(getClass()).trace("This is a trace message, very detailed messages.");
-		
-		
-		result.include("oi","oi");
+
 		
 	}
 }
