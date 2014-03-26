@@ -28,5 +28,12 @@
 	</dependencies>
 	<build>
 		<finalName>app1-v03-${project.version}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.wildfly.plugins</groupId>
+				<artifactId>wildfly-maven-plugin</artifactId>
+				<version>1.0.0.Beta1</version>
+			</plugin>
+		</plugins>
 	</build>
 </project>

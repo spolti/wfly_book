@@ -38,5 +38,12 @@
 	</dependencies>
 	<build>
 		<finalName>app3-v01-memory-test-${project.version}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.wildfly.plugins</groupId>
+				<artifactId>wildfly-maven-plugin</artifactId>
+				<version>1.0.0.Beta1</version>
+			</plugin>
+		</plugins>
 	</build>
 </project>
