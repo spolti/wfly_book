@@ -6,7 +6,7 @@
 	<display-name>Archetype Created Web Application</display-name>
 	<servlet>
 		<servlet-name>MainServlet</servlet-name>
-		<servlet-class>com.wfly_book_app2.MainServlet</servlet-class>
+		<servlet-class>com.wfly_book_app3.MainServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
