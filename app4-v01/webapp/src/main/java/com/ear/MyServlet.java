@@ -36,17 +36,16 @@ public class MyServlet extends HttpServlet{
 			java.util.Properties config = new java.util.Properties();
 			config.put("StrictHostKeyChecking", "no");
 
-			// Criando a sessao e conectando no servidor
 			JSch jsch = new JSch();
 			Session session = null;
 			try {
-				session = jsch.getSession("spolti", "localhost", 22);
+				session = jsch.getSession("Your-Linux-User", "Your-Linux-Host", 22);
 			} catch (JSchException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
 			session.setConfig(config);
-			session.setPassword("lipe33spol90");
+			session.setPassword("Your-Linux-Password");
 			try {
 				session.connect(10000);
 			} catch (JSchException e1) {
@@ -54,7 +53,6 @@ public class MyServlet extends HttpServlet{
 				e1.printStackTrace();
 			}
 
-			// Exectando o comando
 			Channel channel = null;
 			try {
 				channel = session.openChannel("exec");
