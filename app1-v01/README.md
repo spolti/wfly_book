@@ -8,4 +8,4 @@ $ cd app1-v01
 
 Then run the maven command:
 
-$ mvn install
+$ mvn package
