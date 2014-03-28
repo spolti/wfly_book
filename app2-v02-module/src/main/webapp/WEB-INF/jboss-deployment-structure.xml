@@ -5,7 +5,7 @@
 			<module name="org.apache.log4j" />
 		</exclusions>
 		<dependencies>
-			<module name="com.wfly-book-app2.app2-v02-module" />
+			<module name="com.jsch" />
 		</dependencies>
 	</deployment>
 </jboss-deployment-structure>  

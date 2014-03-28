@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <jboss-web>
-	<context-root>/log</context-root>
+	<context-root>/ssh</context-root>
 </jboss-web>
