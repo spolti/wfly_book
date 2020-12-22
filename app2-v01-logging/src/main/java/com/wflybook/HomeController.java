@@ -1,7 +1,5 @@
 package com.wflybook;
 
-import org.apache.log4j.Logger;
-
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
@@ -9,8 +7,9 @@ import br.com.caelum.vraptor.Result;
 @Resource
 public class HomeController {
 
-	private final Result result;
+	private final java.util.logging.Logger log = java.util.logging.Logger.getLogger(this.getClass().getName());
 
+	private final Result result;
 	
 	public HomeController(Result result){
 		this.result = result;
@@ -18,15 +17,10 @@ public class HomeController {
 	
 	@Path("/home")
 	public void home() {
-				
-		
-		Logger.getLogger(getClass()).fatal("This is a fatal message, a high level message error.");
-		Logger.getLogger(getClass()).error("This is a error message.");
-		Logger.getLogger(getClass()).warn("This is a warning message.");
-		Logger.getLogger(getClass()).info("This is a information message.");
-		Logger.getLogger(getClass()).debug("This is a debug message.");
-		Logger.getLogger(getClass()).trace("This is a trace message, very detailed messages.");
-
-		
+		log.severe("This is a fatal message, a high level message error.");
+		log.warning("This is a warning message.");
+		log.info("This is a information message.");
+		log.fine("This is a debug message.");
+		log.finest("This is a trace message, very detailed messages.");
 	}
 }

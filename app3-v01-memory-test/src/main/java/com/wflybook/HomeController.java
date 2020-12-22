@@ -3,8 +3,6 @@ package com.wflybook;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
-
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
@@ -12,6 +10,7 @@ import br.com.caelum.vraptor.Result;
 @Resource
 public class HomeController {
 
+	private final java.util.logging.Logger log = java.util.logging.Logger.getLogger(this.getClass().getName());
 	private final Result result;
 
 	public HomeController(Result result) {
@@ -21,22 +20,19 @@ public class HomeController {
 	@Path("/home")
 	public void home(String level) {
 
-		Logger.getLogger(getClass()).info(
-				"This app will simulate a OutOfMemory Error.");
+		log.info("This app will simulate a OutOfMemory Error.");
 
 		List<Object> list = new ArrayList<Object>();
 		
 		while (true) {
 
 			try{
-				Logger.getLogger(getClass()).info("This is a infinete loop, list size: " + list.size());
+				log.info("This is a infinete loop, list size: " + list.size());
 				list.add(new Object());
 				list.add(new Object());	
 			}catch (Exception e){
-				Logger.getLogger(getClass()).error("Objects stored on heap before OutOfMemory: " + list.size());
+				log.severe("Objects stored on heap before OutOfMemory: " + list.size());
 			}
-			
-
 		}
 	}
 }
